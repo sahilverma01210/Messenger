@@ -2,13 +2,14 @@ package com.example.sahil.messanger;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -21,7 +22,7 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.HashMap;
 
-public class SignUp extends AppCompatActivity{
+public class SignUp extends AppCompatActivity {
     MaterialEditText username,email_id,password;
     Button sign_up;
     FirebaseAuth auth;
@@ -90,7 +91,7 @@ public class SignUp extends AppCompatActivity{
                     });
                 }
                 else{
-                    Toast.makeText(SignUp.this,"Can't register using this emai or password",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUp.this,"Can't register using this email or password",Toast.LENGTH_SHORT).show();
                 }
 
             }

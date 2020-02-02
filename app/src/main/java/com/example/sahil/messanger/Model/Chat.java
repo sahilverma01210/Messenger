@@ -1,8 +1,5 @@
 package com.example.sahil.messanger.Model;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
 public class Chat {
     private String message;
     private String receiver;
